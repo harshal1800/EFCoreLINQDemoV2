@@ -1,12 +1,6 @@
-# EFCoreLINQDemoV2
-gpt link : https://chatgpt.com/share/694e5c58-c1ec-8013-9f10-20235495b8a7
-
 # EF Core LINQ Demo
 
 This project demonstrates how LINQ queries are automatically translated into SQL queries by Entity Framework Core and executed on SQL Server.
-
----
-
 ## 🚀 What This Project Shows
 
 ✔ How to connect .NET 8 Console App with SQL Server using EF Core  
@@ -19,23 +13,23 @@ This project demonstrates how LINQ queries are automatically translated into SQL
 
 ## 🛠️ Tech Stack
 
-| Technology | Version |
-|-----------|---------|
-| .NET | 8.0 |
-| Entity Framework Core | 8.0 |
-| SQL Server | 2019/2022 |
-| C# | Latest |
+| Technology            | Version   |
+|-----------            |---------  |
+| .NET                  | 8.0       |
+| Entity Framework Core | 8.0       |
+| SQL Server            | 2019/2022 |
+| C#                    | Latest    |
 
 ---
 
 ## 📂 Database Structure
 
 **Table: Products**
-| Column | Type |
-|--------|------|
-| Id | INT, Primary Key |
-| Name | VARCHAR(100) |
-| Price | DECIMAL(10,2) |
+| Column| Type 
+|-------|------
+| Id    | INT, Primary Key 
+| Name  | VARCHAR(100) 
+| Price | DECIMAL(10,2) 
 
 Sample Data:
 - Laptop — ₹45,000
@@ -96,7 +90,7 @@ EF Core tracks returned objects for change detection.
 
 ---
 
-## 🧑‍💼 Final Summary (Interview Answer)
+## 🧑‍💼 Final Summary 
 
 > EF Core converts LINQ into Expression Trees, then the SQL Provider translates those into SQL and executes the query only when a terminal operator like ToList() is used. The results are mapped back into C# objects.
 
